@@ -1,0 +1,9 @@
+<div class="wrapper column gap-1">
+    <img [src]="product.image" alt="Product Thumbnail">
+    <h2 class="title">{{product.name}} </h2>
+    <div class="row gap-05">
+        <span class="price">Price:</span>
+        <span class="price">{{product.price}} </span>
+    </div>
+    <p-rating [readonly]="true" iconCancelClass="hidden" [(ngModel)]="product.rating"></p-rating>
+</div>
